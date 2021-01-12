@@ -1,0 +1,23 @@
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.app {
+  // height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #f1f3f6; // #f0f2f4;
+}

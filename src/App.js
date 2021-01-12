@@ -1,9 +1,10 @@
-import "./App.css";
+import HomePage from "./containers/HomePage";
+import "./default.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>Flipkart Clone</h1>
+      <HomePage />
     </div>
   );
 }
