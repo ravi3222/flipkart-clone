@@ -10,19 +10,20 @@
     justify-content: space-between;
     padding: 1rem 2rem;
     border-bottom: 1px solid #cecece;
-    background: blue;
+    // background: blue;
   }
 
   .productContainer {
     width: 20rem;
-    background: green;
+    margin: 0 1rem;
+    // background: green;
 
     .productImgContainer {
       display: flex;
       justify-content: center;
       width: 15rem;
       height: 15rem;
-      margin: 0 auto;
+      margin: 1rem auto;
       overflow: hidden;
       //   text-align: center;
       img {
