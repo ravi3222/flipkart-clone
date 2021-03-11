@@ -20,6 +20,24 @@ function ProductPage(props) {
     dispatch(getProductPage(payload));
   }, []);
 
-  return <div style={{ margin: "0 10px" }}>{JSON.stringify(product.page)}</div>;
+  return (
+    <div style={{ margin: "0 10px" }}>
+      {/* {JSON.stringify(product.page)} */}
+
+      <h3>{page.title}</h3>
+      <Carousel renderThumbs={() => {}}>
+        {page.banners &&
+          page.banners.map((banner, index) => (
+            <a
+              key={index}
+              style={{ display: "block" }}
+              href={banner.navigateTo}
+            >
+              <img src={banner.img} alt="" />
+            </a>
+          ))}
+      </Carousel>
+    </div>
+  );
 }
 export default ProductPage;
