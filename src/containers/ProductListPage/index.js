@@ -29,7 +29,7 @@ function ProductListPage(props) {
   };
   return (
     <Layout>
-      <ProductStore {...props} />
+      {/* <ProductStore {...props} /> */}
       {renderProduct()}
     </Layout>
   );
