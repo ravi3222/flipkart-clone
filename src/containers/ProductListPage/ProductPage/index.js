@@ -4,6 +4,7 @@ import { getProductPage } from "../../../redux/actions";
 import getParams from "../../../utils/getParams";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Card from "../../../components/Card/Card";
 
 function ProductPage(props) {
   const dispatch = useDispatch();
@@ -37,6 +38,31 @@ function ProductPage(props) {
             </a>
           ))}
       </Carousel>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          margin: "10px 0",
+        }}
+      >
+        {page.products &&
+          page.products.map((product, index) => (
+            <Card
+              key={index}
+              style={{ width: "400px", height: "200px", margin: "0px 5px" }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+                src={product.img}
+                alt=""
+              />
+            </Card>
+          ))}
+      </div>
     </div>
   );
 }
