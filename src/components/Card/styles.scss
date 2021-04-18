@@ -1,7 +1,13 @@
 .card {
+  background: #fff;
   width: 100%;
-  background: blue;
   border: 1px solid #cecece;
-  color: red;
-  box-shadow: 0 0 2px 2px #cecece;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px !important;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #cecece;
+  // background: blue;
 }

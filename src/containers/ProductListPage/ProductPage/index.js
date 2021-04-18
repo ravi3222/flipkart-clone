@@ -4,7 +4,7 @@ import { getProductPage } from "../../../redux/actions";
 import getParams from "../../../utils/getParams";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Card from "../../../components/Card/Card";
+import Card from "../../../components/Card/";
 
 function ProductPage(props) {
   const dispatch = useDispatch();
